@@ -11,13 +11,21 @@ export default function Example() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="#" className="-m-1.5 p-1.5 bg-blu">
             <span className="sr-only">Your Company</span>
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
-            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="40"
+              height="40"
+              viewBox="0 0 48 48"
+            >
+              <path
+                fill="rgb(37,99,235)"
+                d="M5 42L17 6 31 6 43 42 32.1 42 24 13 19 31 30 31 16 42z"
+              ></path>
+            </svg>
           </a>
         </div>
         <div className="flex lg:hidden">

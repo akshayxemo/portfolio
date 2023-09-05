@@ -14,7 +14,7 @@ export default function Hero() {
     <>
       <div className={` w-full h-auto overflow-hidden relative`}>
         <div
-          className={`max-w-7xl h-auto mx-auto px-6 py-40 flex flex-row flex-wrap-reverse gap-5 justify-around items-center max-sm:py-32 border-b-2 border-slate-800`}
+          className={`max-w-7xl h-auto mx-auto px-6 py-40 flex flex-row flex-wrap-reverse gap-5 justify-around items-center max-sm:py-32`}
         >
           <img
             src={bgImg}
@@ -72,7 +72,7 @@ export default function Hero() {
                 </a>
               </div>
               <div className="w-40 h-12 p-[0.15rem] mt-10 rounded-full gradient-border transition ease-in-out delay-100 hover:scale-105 max-sm:mx-auto">
-                <div className="w-full h-full dark:bg-slate-950 dark:text-white text-slate-950 bg-white rounded-full cursor-pointer flex justify-center items-center">
+                <div className="w-full h-full dark:bg-black dark:text-white text-slate-950 bg-white rounded-full cursor-pointer flex justify-center items-center">
                   {" "}
                   Contact Me{" "}
                 </div>
