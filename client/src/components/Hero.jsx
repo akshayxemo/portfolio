@@ -14,7 +14,7 @@ export default function Hero() {
     <>
       <div className={` w-full h-auto overflow-hidden relative`}>
         <div
-          className={`max-w-7xl h-auto mx-auto px-6 py-40 flex flex-row flex-wrap-reverse gap-5 justify-around items-center max-sm:py-32`}
+          className={`max-w-7xl h-auto mx-auto px-6 pb-40 pt-48 flex flex-row flex-wrap-reverse gap-5 justify-around items-center max-sm:py-32`}
         >
           <img
             src={bgImg}

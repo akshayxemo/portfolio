@@ -82,7 +82,7 @@ export default function Example() {
           <div
             className={`flex gap-7 max-sm:flex-col max-sm:absolute max-sm:w-full max-sm:left-0 max-sm:top-0 transition delay-200 justify-center items-center max-sm:px-6 max-sm:py-8 max-sm:dark:bg-black max-sm:bg-white ${
               mobileMenuOpen
-                ? "max-sm:visible animate-drop-t"
+                ? "max-sm:visible animate-drop-t shadow"
                 : "max-sm:hidden animate-drop-t-back"
             }`}
           >

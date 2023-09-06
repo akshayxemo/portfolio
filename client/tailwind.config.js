@@ -3,6 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        xsm: "420px",
+        xxsm: "300px",
+        // => @media (min-width: 640px) { ... }
+      },
       keyframes: {
         spin360: {
           from: { transform: "rotate(0deg)" },
