@@ -83,7 +83,7 @@ export default function Hero() {
             <img
               src={profileImg}
               alt=""
-              className="h-64 rounded-full aspect-square border-2 border-sky-500 glow max-md:mb-10 max-sm:h-52"
+              className="h-64 rounded-full aspect-square border-2 border-sky-500 glow max-md:mb-10 max-sm:h-48"
             />
           </div>
         </div>
