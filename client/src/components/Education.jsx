@@ -33,14 +33,14 @@ export default function Education({ id, title, from, year, marks, status }) {
             )}
           </div>
           <div>
-            <span className="text-sm max-xxsm:text-xs max-xxsm:leading-[0.5rem] font-light italic text-slate-500">
+            <span className="text-sm max-xxsm:text-xs max-xxsm:leading-[0.5rem] font-light italic text-gray-500">
               {year}
             </span>
           </div>
         </div>
         <hr className="my-4 dark:border-gray-400/30 border-gray-700/20"></hr>
         <div>
-          <p className="text-slate-500">{marks}</p>
+          <p className="text-gray-500">{marks}</p>
         </div>
       </div>
     </>

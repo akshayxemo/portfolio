@@ -1,0 +1,26 @@
+[
+  {
+    "id": "2",
+    "title": "Web Development and Design at",
+    "company": "Oasis-Infobyte",
+    "link": "https://oasisinfobyte.com/",
+    "fromDate": "2023-04-15",
+    "toDate": "2023-05-15",
+    "remarks": "In this internship program I have done all the taskes assigned to me like creating a Landing Page, personal Portfolio site, and Temperature-Converter using basic HTML, CSS, and JavaScript.",
+    "internship": true,
+    "remote": true,
+    "onsite": false
+  },
+  {
+    "id": "1",
+    "title": "Web Development and Design at",
+    "company": "Txon",
+    "link": "https://txon.in/",
+    "fromDate": "2023-04-10",
+    "toDate": "2023-05-10",
+    "remarks": "In this internship program I have done all the taskes assigned to me like creating a Landing Page, Calculator, and personal Portfolio site using basic HTML, CSS, and JavaScript.",
+    "internship": true,
+    "remote": true,
+    "onsite": false
+  }
+]

@@ -4,6 +4,8 @@ import { FcAbout, FcBriefcase, FcGraduationCap } from "react-icons/fc";
 import Education from "./Education";
 import Edu from "../assets/data/education.json";
 import AboutText from "../assets/data/about.json";
+import Experience from "./Experience";
+import expData from "../assets/data/experience.json";
 
 export default function About() {
   const [active, setActive] = useState("about");
@@ -50,9 +52,9 @@ export default function About() {
             Experience
           </div>
         </div>
-        <div className="w-[60%] h-[30rem] overflow-y-auto max-sm:w-full px-6 py-4">
+        <div className="w-[60%] h-[30rem] overflow-y-auto max-sm:w-full px-6 py-4 dark:text-white text-black">
           {active === "about" ? (
-            <div className="dark:text-white text-black text-center flex flex-col gap-2 items-center px-8 max-xxsm:px-2">
+            <div className="text-center flex flex-col gap-2 items-center px-8 max-xxsm:px-2">
               <BiSolidQuoteLeft className="text-8xl max-sm:text-5xl dark:opacity-20 opacity-10" />
               <p className="leading-[30px] text-xl max-sm:text-lg max-xxsm:text-sm max-xxsm:leading-6">
                 {AboutText.about}
@@ -73,7 +75,24 @@ export default function About() {
               );
             })
           ) : (
-            ""
+            expData.map((item, index) => {
+              const formattedIndex = index < 9 ? `0${index + 1}` : index + 1;
+              return (
+                <Experience
+                  key={item.id}
+                  id={formattedIndex}
+                  title={item.title}
+                  company={item.company}
+                  link={item.link}
+                  fromDate={item.fromDate}
+                  toDate={item.toDate}
+                  remarks={item.remarks}
+                  internship={item.internship}
+                  remote={item.remote}
+                  onsite={item.onsite}
+                />
+              );
+            })
           )}
         </div>
       </div>

@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Navbar />
         <Hero />
         <About />
+        <BackToTop />
       </div>
     </>
   );
