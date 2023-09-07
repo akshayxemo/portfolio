@@ -1,11 +1,16 @@
 /* width */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 5px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
-  background: rgb(31, 41, 55);
+.dark ::-webkit-scrollbar-track {
+  background: rgb(27, 36, 49);
+  /* background: rgb(6, 58, 114); */
+}
+.light ::-webkit-scrollbar-track {
+  /* background: rgb(31, 41, 55); */
+  background: rgba(6, 58, 114, 0.1);
 }
 
 /* Handle */

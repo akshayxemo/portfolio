@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "MCA",
+    "from": "University Of Calcutta",
+    "year": "2022-2023",
+    "marks": "SGPA: 8.49",
+    "status": "Pursuing"
+  },
+  {
+    "id": 2,
+    "title": "B.Sc. Computer Science (hons)",
+    "from": "University Of Calcutta | Jogesh chandra Chaudhuri College",
+    "year": "2019-2022",
+    "marks": "CGPA: 8.267",
+    "status": "Graduated"
+  },
+  {
+    "id": 3,
+    "title": "Higher Secondary (12th)",
+    "from": "Harinavi D.V.A.S. High School | WBCHSE",
+    "year": "2018-2019",
+    "marks": "Percentage: 71.2%",
+    "status": "Passed"
+  },
+  {
+    "id": 4,
+    "title": "Secondary (10th)",
+    "from": "Harinavi D.V.A.S. High School | WBBSE",
+    "year": "2016-2017",
+    "marks": "Percentage: 74.85%",
+    "status": "Passed"
+  }
+]
