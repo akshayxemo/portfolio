@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       screens: {
+        msm: "550px",
         xsm: "420px",
         xxsm: "300px",
-        // => @media (min-width: 640px) { ... }
       },
       keyframes: {
         spin360: {
@@ -33,11 +33,20 @@ export default {
             opacity: "0",
           },
         },
+        scrollY: {
+          from: {
+            transform: "translateY(0%)",
+          },
+          to: {
+            transform: "translateY(-75%)",
+          },
+        },
       },
       animation: {
         "spin-one": "spin360 1s linear 1 forwards",
         "drop-t": "drop 0.5s linear 1 forwards",
         "drop-t-back": "dropBack 0.5s linear 1 backwards",
+        "scroll-y": "scrollY 10s linear 1 forwards",
       },
     },
     fontFamily: {

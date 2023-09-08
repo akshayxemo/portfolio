@@ -87,13 +87,22 @@ export default function Example() {
             }`}
           >
             <div className="flex flex-row gap-4 text-black dark:text-slate-300 max-sm:flex-col">
-              <a href="" className="dark:hover:text-white hover:text-slate-600">
+              <a
+                href="#about"
+                className="dark:hover:text-white hover:text-slate-600"
+              >
                 About
               </a>
-              <a href="" className="dark:hover:text-white hover:text-slate-600">
+              <a
+                href="#projects"
+                className="dark:hover:text-white hover:text-slate-600"
+              >
                 Projects
               </a>
-              <a href="" className="dark:hover:text-white hover:text-slate-600">
+              <a
+                href="#contact"
+                className="dark:hover:text-white hover:text-slate-600"
+              >
                 Contact
               </a>
             </div>

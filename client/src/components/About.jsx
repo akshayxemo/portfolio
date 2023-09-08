@@ -12,7 +12,10 @@ export default function About() {
 
   return (
     <>
-      <div className="flex max-sm:flex-col max-w-7xl h-auto mx-auto px-6 max-sm:px-4 pb-20 pt-10 max-sm:pt-0 max-sm:gap-8">
+      <div
+        id="about"
+        className="flex max-sm:flex-col max-w-7xl h-auto mx-auto px-6 max-sm:px-4 pb-20 pt-10 max-sm:pt-0 max-sm:gap-8"
+      >
         <div className="dark:text-white text-dark flex flex-col flex-wrap gap-1 w-[40%] max-sm:w-full max-sm:flex-row max-sm:text-sm max-sm:justify-between max-xsm:justify-center font-sans">
           <div
             id="about"
