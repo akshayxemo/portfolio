@@ -1,5 +1,81 @@
+import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
+import { Octokit } from "octokit";
 export default function Projects() {
+  const token = import.meta.env.GIT_API_KEY;
+  const [repos, setRepos] = useState([]);
+
+  useEffect(() => {
+    // Function to extract the first image URL from Markdown content
+    function extractFirstImageFromMarkdown(markdownContent) {
+      const regex = /!\[.*?\]\((https:\/\/github\.com\/[^)]+)\)/;
+      const match = markdownContent.match(regex);
+      return match ? match[1] : "";
+    }
+
+    const octokit = new Octokit({
+      auth: token,
+    });
+    octokit
+      .request("GET /users/{owner}/starred", {
+        owner: "akshayxemo",
+      })
+      .then((result) => {
+        const starredRepos = result.data.filter(
+          (repo) => repo.owner.login === "akshayxemo"
+        );
+        // console.log(starredRepos);
+        starredRepos.sort(
+          (a, b) => new Date(b.created_at) - new Date(a.created_at)
+        );
+        for (const repo of starredRepos) {
+          octokit
+            .request("GET /repos/{owner}/{repo}/readme", {
+              owner: repo.owner.login,
+              repo: repo.name,
+            })
+            .then((readmeResponse) => {
+              const readmeContent = atob(readmeResponse.data.content);
+              // console.log(readmeResponse);
+              const firstImageUrl =
+                extractFirstImageFromMarkdown(readmeContent);
+
+              const newRepo = {
+                id: repo.id,
+                reponame: repo.name,
+                preview: firstImageUrl,
+                description: repo.description,
+                createdAt: repo.created_at,
+                updatedAt: repo.updated_at,
+                homepage: repo.homepage,
+                htmlLink: repo.html_url,
+                tags: repo.topics,
+              };
+              // addNewRepo(newRepo);
+              console.log("repo");
+              console.log(repos);
+              setRepos((prevRepos) => {
+                if (!prevRepos.some((repo) => repo.id === newRepo.id)) {
+                  return [...prevRepos, newRepo];
+                }
+                return prevRepos;
+              });
+              if (firstImageUrl) {
+                console.log(
+                  `First image URL for ${repo.name}: ${firstImageUrl}`
+                );
+              } else {
+                console.log(`No image found in the README for ${repo.name}`);
+              }
+            });
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  }, [token]);
+
+  console.log(repos);
   return (
     <>
       <div className="w-full dark:bg-gray-700/10 bg-gray-400/10">
@@ -9,18 +85,22 @@ export default function Projects() {
             <p className="text-gray-500">Projects that showcase my skills</p>
           </div>
           <div className="flex justify-center gap-8 flex-wrap">
-            <ProjectCard
-              text={`It is a platform where peoples can prepare for interview by
-            attending real life 1:1 live interview session with mentors and
-            getting a performance result. This platform also provide performance
-            visualization based on the interview results with 1:1 chat system
-            and subscription payment gateway (Stripe).`}
-            />
-            <ProjectCard
-              text={`It is a platform where peoples can prepare for interview by
-            attending real life 1:1 live interview session with mentors and
-            getting a performance result. `}
-            />
+            {repos.map((repo) => {
+              return (
+                <ProjectCard
+                  key={repo.id}
+                  id={repo.id}
+                  reponame={repo.reponame}
+                  preview={repo.preview}
+                  description={repo.description}
+                  createdAt={repo.createdAt}
+                  updatedAt={repo.updatedAt}
+                  homepage={repo.homepage}
+                  htmlLink={repo.htmlLink}
+                  tags={repo.tags}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
