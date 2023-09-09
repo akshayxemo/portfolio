@@ -1,0 +1,97 @@
+[
+  {
+    "id": "1",
+    "reponame": "intervuMe-web",
+    "preview": "https://github.com/akshayxemo/intervuMe-web/assets/83893825/16733d29-ce7e-4cbd-8141-891ac82d538f",
+    "description": "It is a platform where peoples can prepare for interview by attending real life 1:1 live interview session with mentors and getting a performance result. This platform also provide performance visualization based on the interview results with 1:1 chat system and subscription payment gateway (Stripe).",
+    "createdAt": "2023-07-15",
+    "updatedAt": "2023-09-09",
+    "homepage": "https://intervu-me.onrender.com/",
+    "htmlLink": "https://github.com/akshayxemo/intervuMe-web",
+    "tags": [
+      "mongodb",
+      "express-js",
+      "react-js",
+      "node-js",
+      "socket.io",
+      "webrtc",
+      "stripe-payment-gateway",
+      "full-stack"
+    ],
+    "collaboration": false
+  },
+  {
+    "id": "2",
+    "reponame": "HomeServiceAgency",
+    "preview": "https://github.com/akshayxemo/HomeServiceAgency/assets/83893825/80b47fac-3859-443e-96ba-226699bc28e3",
+    "description": "A online Home service website where users can get many professionals according to the services provided in the website. And can book any one of the professional for their word with date and time.",
+    "createdAt": "2022-12-03",
+    "updatedAt": "2023-03-01",
+    "homepage": "",
+    "htmlLink": "https://github.com/akshayxemo/HomeServiceAgency",
+    "tags": [
+      "java",
+      "servlet",
+      "mysql",
+      "vanilla-js",
+      "html",
+      "css",
+      "full-stack"
+    ],
+    "collaboration": true
+  },
+  {
+    "id": "3",
+    "reponame": "Blood-Bank-Manager-Web",
+    "preview": "https://github.com/akshayxemo/Blood-Bank-Manager-Web/assets/83893825/a0cc0ab3-028d-4af0-b03c-842c029f1a53",
+    "description": "This is a blood bank API based website design where you get blood stock related information from your nearest hospital.",
+    "createdAt": "2022-02-19",
+    "updatedAt": "2022-06-18",
+    "homepage": "https://blood-bank-manager.netlify.app/",
+    "htmlLink": "https://github.com/akshayxemo/Blood-Bank-Manager-Web",
+    "tags": ["vue-js", "type-script", "tailwind"],
+    "collaboration": true
+  },
+  {
+    "id": "4",
+    "reponame": "TCP-Client-Server-Socket",
+    "preview": "",
+    "description": "It's a chatting system implemented in C - Programming Language by using TCP-Socket programming. In this project multiple Client can send and receive message between each other until they are connected to the Server. Clients can use multiple commands and command format provided by the server to communicate with the server and other clients.",
+    "createdAt": "2023-05-01",
+    "updatedAt": "2023-05-05",
+    "homepage": "",
+    "htmlLink": "https://github.com/akshayxemo/TCP-Client-Server-Socket",
+    "tags": [
+      "C-Programming",
+      "tcp",
+      "socket-programming",
+      "linux",
+      "client-server-architecture"
+    ],
+    "collaboration": false
+  },
+  {
+    "id": "5",
+    "reponame": "Temperature-Converter",
+    "preview": "https://github.com/akshayxemo/Temperature-Converter/assets/83893825/009a4cba-aa0d-403e-ac8f-d0e77e198981",
+    "description": "This is a HTML, CSS and Vanilla JS based temperature converter web application, that converts temperature based on user input and convert it to the desired unit output like Celsius to Fahrenheit, Kelvin or vice versa.",
+    "createdAt": "2023-04-08",
+    "updatedAt": "2023-04-08",
+    "homepage": "https://akshayxemo.github.io/Temperature-Converter/",
+    "htmlLink": "https://github.com/akshayxemo/Temperature-Converter",
+    "tags": ["html", "css", "vanilla-js"],
+    "collaboration": false
+  },
+  {
+    "id": "6",
+    "reponame": "TXON-Web-Development-internship",
+    "preview": "https://github.com/akshayxemo/TXON-Web-Development-internship/assets/83893825/7f722b8a-2cf5-4aac-84f6-b48e5b61d5cf",
+    "description": "This repository consist of all tasks assigned by TXON Web Development and Design Internship. All projects are created using Basic HTML, CSS and JavaScript. such as TO-DO-LIST, LANDING PAGE and CALCULATOR",
+    "createdAt": "2023-04-10",
+    "updatedAt": "2023-05-10",
+    "homepage": "https://akshayxemo.github.io/TXON-Web-Development-internship/",
+    "htmlLink": "https://github.com/akshayxemo/TXON-Web-Development-internship",
+    "tags": ["html", "css", "vanilla-js"],
+    "collaboration": false
+  }
+]

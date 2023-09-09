@@ -8,6 +8,7 @@ import {
   differenceInCalendarYears,
 } from "date-fns";
 import { useEffect, useState } from "react";
+import { FaGithub } from "react-icons/fa6";
 
 Experience.propTypes = {
   id: PropTypes.string.isRequired,
@@ -20,6 +21,7 @@ Experience.propTypes = {
   internship: PropTypes.bool.isRequired,
   remote: PropTypes.bool.isRequired,
   onsite: PropTypes.bool.isRequired,
+  gitRepo: PropTypes.string,
 };
 export default function Experience({
   id,
@@ -32,6 +34,7 @@ export default function Experience({
   internship,
   remote,
   onsite,
+  gitRepo,
 }) {
   const [year, setYear] = useState();
   const [month, setMonth] = useState();
@@ -45,10 +48,10 @@ export default function Experience({
 
   return (
     <>
-      <div id={id} className="flex mb-8 last:mb-0">
+      <div id={id} className="flex mb-10 last:mb-0">
         <div className="flex flex-row gap-4 max-sm:flex-wrap">
           <div className="text-5xl font-bold opacity-10">{id}</div>
-          <div>
+          <div className=" pb-5">
             <div className="mb-4">
               <div className="flex flex-row items-center text-2xl mb-2">
                 <h3 className="capitalize">
@@ -93,6 +96,17 @@ export default function Experience({
             </div>
             <p className="mt-4 dark:text-gray-600 text-gray-500">{remarks}</p>
             <br />
+
+            <div className="flex flex-wrap items-center w-full gap-4 mb-5">
+              <a
+                href={gitRepo}
+                target="blank"
+                className="p-3 rounded border-[0.5px] border-gray-600/25 dark:border-none bg-white dark:bg-gray-800/30 dark:hover:bg-gray-700/40 hover:scale-105 flex justify-center items-center gap-3"
+              >
+                <FaGithub /> Github
+              </a>
+            </div>
+
             <span className="dark:text-gray-600 text-gray-500">
               <em>
                 {format(parseISO(fromDate), "MMMM d, yyyy")} -{" "}

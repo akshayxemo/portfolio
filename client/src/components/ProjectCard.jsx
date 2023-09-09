@@ -15,6 +15,7 @@ ProjectCard.propTypes = {
   homepage: PropTypes.string.isRequired,
   htmlLink: PropTypes.string.isRequired,
   tags: PropTypes.array.isRequired,
+  collaboration: PropTypes.bool,
 };
 export default function ProjectCard({
   id,
@@ -26,6 +27,7 @@ export default function ProjectCard({
   homepage,
   htmlLink,
   tags,
+  collaboration,
 }) {
   return (
     <>
@@ -42,7 +44,12 @@ export default function ProjectCard({
         </div>
         <div className="p-6 flex flex-col justify-between grow">
           <div>
-            <h1 className="text-2xl mb-4 font-bold">{reponame}</h1>
+            <h1 className="text-2xl mb-4 font-bold">
+              {reponame}{" "}
+              {collaboration && (
+                <span className="text-sm text-orange-600">Collaboration</span>
+              )}
+            </h1>
             <p className="text-sm text-gray-500 mb-5">{description}</p>
           </div>
           <div>

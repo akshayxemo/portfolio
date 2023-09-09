@@ -93,6 +93,7 @@ export default function About() {
                   internship={item.internship}
                   remote={item.remote}
                   onsite={item.onsite}
+                  gitRepo={item.gitRepo}
                 />
               );
             })

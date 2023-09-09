@@ -20,7 +20,7 @@ export default function BackToTop() {
     <>
       {scrollY > 250 ? (
         <button
-          className="p-2 rounded text-white bg-orange-500 hover:bg-orange-600 fixed right-5 bottom-5 text-3xl"
+          className="p-2 rounded text-white bg-orange-500 hover:bg-orange-600 fixed right-4 bottom-5 text-3xl z-50"
           onClick={BackToTop}
         >
           <BiSolidUpArrowAlt />
