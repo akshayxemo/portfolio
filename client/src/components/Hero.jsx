@@ -4,7 +4,6 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa6";
-// import profileImg from "../assets/ProfilePic-design201.jpg";
 import profileImg2 from "../assets/ProfilePic-design.jpg";
 import "../assets/css/Hero.css";
 import bgImg from "../assets/docs@tinypng.d9e4dcdc.png";
