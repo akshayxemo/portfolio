@@ -6,7 +6,7 @@ import { FiExternalLink } from "react-icons/fi";
 import { format, parseISO } from "date-fns";
 
 ProjectCard.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   reponame: PropTypes.string.isRequired,
   preview: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

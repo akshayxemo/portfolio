@@ -45,6 +45,7 @@ export default function Example() {
               width="40"
               height="40"
               viewBox="0 0 48 48"
+              // className="transform scale-x-[-1]"
             >
               <path
                 fill="rgb(37,99,235)"

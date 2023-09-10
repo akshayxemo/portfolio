@@ -3,7 +3,7 @@ import Navbar from "./components/navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import BackToTop from "./components/BackToTop";
-// import Skill from "./components/Skill";
+import Skill from "./components/Skill";
 import Projects from "./components/Projects";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Hero />
         <About />
         <BackToTop />
-        {/* <Skill /> */}
+        <Skill />
         <Projects />
       </div>
     </>

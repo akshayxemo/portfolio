@@ -1,6 +1,4 @@
-// import { useParallax } from "react-scroll-parallax";
 import { DiJava } from "react-icons/di";
-import { BsFillSuitHeartFill } from "react-icons/bs";
 import {
   SiBootstrap,
   SiExpress,
@@ -11,53 +9,51 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 export default function Skill() {
-  //   const orbit1 = useParallax({
-  //     rotate: [0, 360],
-  //   });
-  //   const orbit2 = useParallax({
-  //     rotate: [-270, 360],
-  //   });
   return (
     <>
-      <div className="p-4 w-full flex justify-center items-center">
-        {/* <div className="text-rose-500 animate-pulse absolute text-2xl">
-          {" "}
-          <BsFillSuitHeartFill />{" "}
+      <div className="w-full dark:text-white">
+        <div className="max-w-7xl mx-auto px-6 max-sm:px-4 pb-24 pt-8 max-xsm:pb-20 w-full">
+          <div className="text-center dark:text-white mb-10">
+            <h1 className="text-3xl font-sans font-semibold mb-1">
+              Tech Stack
+            </h1>
+            <p className="text-gray-500">Technologies that I know</p>
+          </div>
+          <div className="flex flex-wrap justify-center items-center gap-6 text-4xl max-sm:text-3xl max-xxsm:text-2xl">
+            {/* .............. Java .............. */}
+            <div className="p-4 rounded-full aspect-square flex justify-center items-center dark:bg-slate-600/30 bg-white drop-shadow-xl">
+              <DiJava className="text-orange-500 hover:scale-105" />
+            </div>
+            {/* .............. React.Js .............. */}
+            <div className="p-4 rounded-full aspect-square flex justify-center items-center dark:bg-slate-600/30 bg-white drop-shadow-xl">
+              <SiReact className="text-blue-500 hover:scale-105" />
+            </div>
+            {/* .............. Tailwind Css .............. */}
+            <div className="p-4 rounded-full aspect-square flex justify-center items-center dark:bg-slate-600/30 bg-white drop-shadow-xl">
+              <SiTailwindcss className="text-sky-500 hover:scale-105" />
+            </div>
+            {/* .............. Bootstrap .............. */}
+            <div className="p-4 rounded-full aspect-square flex justify-center items-center dark:bg-slate-600/30 bg-white drop-shadow-xl">
+              <SiBootstrap className="text-purple-500 hover:scale-105" />
+            </div>
+            {/* .............. Express.Js .............. */}
+            <div className="p-4 rounded-full aspect-square flex justify-center items-center dark:bg-slate-600/30 bg-white drop-shadow-xl">
+              <SiExpress className=" hover:scale-105" />
+            </div>
+            {/* .............. Node.Js .............. */}
+            <div className="p-4 rounded-full aspect-square flex justify-center items-center dark:bg-slate-600/30 bg-white drop-shadow-xl">
+              <SiNodedotjs className="text-green-600 hover:scale-105" />
+            </div>
+            {/* .............. mySql .............. */}
+            <div className="p-4 rounded-full aspect-square flex justify-center items-center dark:bg-slate-600/30 bg-white drop-shadow-xl">
+              <SiMysql className="text-indigo-500 hover:scale-105" />
+            </div>
+            {/* .............. mongodb .............. */}
+            <div className="p-4 rounded-full aspect-square flex justify-center items-center dark:bg-slate-600/30 bg-white drop-shadow-xl">
+              <SiMongodb className="text-green-500 hover:scale-105" />
+            </div>
+          </div>
         </div>
-        <div
-          ref={orbit2.ref}
-          className="spinner p-16 aspect-square border dark:border-gray-800 border-gray-200 rounded-full relative flex justify-center items-center text-white bg-transparent"
-        >
-          <div className="diamond absolute left-1/2 -top-6 -translate-x-5 text-5xl text-sky-600">
-            <SiTailwindcss />
-          </div>
-          <div className="clown absolute text-5xl text-purple-600 -bottom-7">
-            <SiBootstrap />
-          </div>
-          <div className="money absolute text-3xl bg-cyan-700 p-3 rounded-full -left-7">
-            <SiMysql />
-          </div>
-          <div className="node absolute text-3xl bg-orange-700 p-3 rounded-full -right-7">
-            <DiJava />
-          </div>
-          <div
-            ref={orbit1.ref}
-            className="spinner p-16 aspect-square border dark:border-gray-800 border-gray-200 rounded-full relative flex justify-center items-center text-white bg-transparent"
-          >
-            <div className="diamond absolute left-1/2 -top-6 -translate-x-5 text-5xl text-sky-600">
-              <SiReact />
-            </div>
-            <div className="clown absolute text-6xl text-green-600 -bottom-7">
-              <SiMongodb />
-            </div>
-            <div className="money absolute text-3xl bg-gray-900 p-3 rounded-full -left-7">
-              <SiExpress />
-            </div>
-            <div className="node absolute text-3xl bg-green-600 p-3 rounded-full -right-7">
-              <SiNodedotjs />
-            </div>
-          </div>
-        </div> */}
       </div>
     </>
   );
