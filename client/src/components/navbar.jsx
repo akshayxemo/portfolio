@@ -35,7 +35,7 @@ export default function Example() {
       >
         <div className="flex lg:flex-1">
           <a
-            href="#"
+            href="/"
             className="-m-1.5 p-1.5 bg-blu flex items-center gap-2 flex-wrap"
           >
             <svg
@@ -101,10 +101,10 @@ export default function Example() {
                 Projects
               </a>
               <a
-                href="#contact"
+                href="#contacts"
                 className="dark:hover:text-white hover:text-slate-600"
               >
-                Contact
+                Contacts
               </a>
             </div>
             <div className="flex gap-7">

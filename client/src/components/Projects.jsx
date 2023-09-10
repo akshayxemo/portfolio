@@ -102,7 +102,7 @@ export default function Projects() {
   console.log(repos);
   return (
     <>
-      <div className="w-full dark:bg-gray-700/10 bg-gray-400/10">
+      <div id="projects" className="w-full dark:bg-gray-500/10 bg-gray-400/10">
         <div className="max-w-7xl mx-auto px-6 max-sm:px-4 py-24">
           <div className="text-center dark:text-white mb-10">
             <h1 className="text-3xl font-sans font-semibold mb-1">Projects</h1>

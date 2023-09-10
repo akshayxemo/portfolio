@@ -4,7 +4,8 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa6";
-import profileImg from "../assets/ProfilePic-design201.jpg";
+// import profileImg from "../assets/ProfilePic-design201.jpg";
+import profileImg2 from "../assets/ProfilePic-design.jpg";
 import "../assets/css/Hero.css";
 import bgImg from "../assets/docs@tinypng.d9e4dcdc.png";
 import bgGlow from "../assets/docs-dark@tinypng.1bbe175e.png";
@@ -81,9 +82,9 @@ export default function Hero() {
           </div>
           <div>
             <img
-              src={profileImg}
+              src={profileImg2}
               alt=""
-              className="h-64 rounded-full aspect-square border-2 border-sky-500 glow max-md:mb-10 max-sm:h-48"
+              className="h-64 rounded-full aspect-square border-2 border-purple-500 glow-purple max-md:mb-10 max-sm:h-48"
             />
           </div>
         </div>

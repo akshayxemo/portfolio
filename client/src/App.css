@@ -39,3 +39,7 @@
 .glow {
   box-shadow: 0 0 80px rgba(0, 255, 255, 0.4);
 }
+
+.glow-purple {
+  box-shadow: 0 0 120px rgba(174, 11, 255, 0.2);
+}
