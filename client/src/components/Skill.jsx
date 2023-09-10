@@ -12,7 +12,7 @@ export default function Skill() {
   return (
     <>
       <div className="w-full dark:text-white">
-        <div className="max-w-7xl mx-auto px-6 max-sm:px-4 pb-24 pt-8 max-xsm:pb-20 w-full">
+        <div className="max-w-7xl mx-auto px-6 max-sm:px-4 pb-28 pt-10 max-xsm:pb-20 w-full">
           <div className="text-center dark:text-white mb-10">
             <h1 className="text-3xl font-sans font-semibold mb-1">
               Tech Stack

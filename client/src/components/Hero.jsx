@@ -73,10 +73,13 @@ export default function Hero() {
                 </a>
               </div>
               <div className="w-40 h-12 p-[0.15rem] mt-10 rounded-full gradient-border transition ease-in-out delay-100 hover:scale-105 max-sm:mx-auto">
-                <div className="w-full h-full dark:bg-black dark:text-white text-slate-950 bg-white rounded-full cursor-pointer flex justify-center items-center">
+                <a
+                  href="#contacts"
+                  className="w-full h-full dark:bg-black dark:text-white text-slate-950 bg-white rounded-full cursor-pointer flex justify-center items-center"
+                >
                   {" "}
                   Contact Me{" "}
-                </div>
+                </a>
               </div>
             </div>
           </div>
