@@ -8,6 +8,7 @@ import profileImg2 from "../assets/ProfilePic-design.jpg";
 import "../assets/css/Hero.css";
 import bgImg from "../assets/docs@tinypng.d9e4dcdc.png";
 import bgGlow from "../assets/docs-dark@tinypng.1bbe175e.png";
+import resumeLink from "../assets/data/resumeLink.json";
 
 export default function Hero() {
   return (
@@ -73,11 +74,12 @@ export default function Hero() {
               </div>
               <div className="w-40 h-12 p-[0.15rem] mt-10 rounded-full gradient-border transition ease-in-out delay-100 hover:scale-105 max-sm:mx-auto">
                 <a
-                  href="#contacts"
+                  href={resumeLink.link}
+                  target="blank"
                   className="w-full h-full dark:bg-black dark:text-white text-slate-950 bg-white rounded-full cursor-pointer flex justify-center items-center"
                 >
                   {" "}
-                  Contact Me{" "}
+                  My Resume{" "}
                 </a>
               </div>
             </div>
