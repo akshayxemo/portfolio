@@ -8,6 +8,7 @@ import {
   SiReact,
   SiTailwindcss,
 } from "react-icons/si";
+
 export default function Skill() {
   return (
     <>
@@ -21,6 +22,7 @@ export default function Skill() {
           </div>
           <div className="flex flex-wrap justify-center items-center gap-6 text-4xl max-sm:text-3xl max-xxsm:text-2xl">
             {/* .............. Java .............. */}
+
             <div className="p-4 rounded-full aspect-square flex justify-center items-center dark:bg-slate-600/30 bg-white drop-shadow-xl">
               <DiJava className="text-orange-500 hover:scale-105" />
             </div>

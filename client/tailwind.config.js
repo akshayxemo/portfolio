@@ -15,8 +15,8 @@ export default {
         },
         drop: {
           from: {
-            top: "0",
-            opacity: "0",
+            top: "-150px",
+            opacity: "0.5",
           },
           to: {
             top: "5rem",
@@ -29,8 +29,9 @@ export default {
             opacity: "1",
           },
           to: {
-            top: "0",
+            top: "-150px",
             opacity: "0",
+            display: "none",
           },
         },
         scrollY: {
@@ -44,8 +45,8 @@ export default {
       },
       animation: {
         "spin-one": "spin360 1s linear 1 forwards",
-        "drop-t": "drop 0.5s linear 1 forwards",
-        "drop-t-back": "dropBack 0.5s linear 1 backwards",
+        "drop-t": "drop 0.8s linear 1 forwards",
+        "drop-t-back": "dropBack 1s linear 1 forwards",
         "scroll-y": "scrollY 10s linear 1 forwards",
       },
     },

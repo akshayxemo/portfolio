@@ -6,6 +6,27 @@ import { FaGithub } from "react-icons/fa6";
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrollColor, setScrollColor] = useState(false);
+
+  const handleMenuOpen = () => {
+    setMobileMenuOpen(true);
+    document
+      .getElementById("nav-items")
+      .classList.remove("max-sm:animate-drop-t-back");
+  };
+
+  const handleMenuClose = async () => {
+    setMobileMenuOpen(false);
+    const nav = document.getElementById("nav-items");
+    await setTimeout(() => {
+      nav.classList.remove("max-sm:hidden");
+      nav.classList.add("max-sm:animate-drop-t-back");
+    }, [0]);
+    setTimeout(() => {
+      nav.classList.remove("max-sm:animate-drop-t-back");
+      nav.classList.add("max-sm:hidden");
+    }, [1100]);
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -14,23 +35,36 @@ export default function Example() {
       }
     };
 
+    function handleScroll() {
+      if (window.scrollY > 300) {
+        setScrollColor(true);
+      } else {
+        setScrollColor(false);
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
     window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <header
-      className={`w-full fixed backdrop-blur top-0 z-40 flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] supports-backdrop-blur:bg-white/95 bg-transparent ${
+      className={`w-full fixed backdrop-blur top-0 z-40 flex-none transition-colors duration-1000 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] supports-backdrop-blur:bg-white/95 bg-transparent ${
         mobileMenuOpen
           ? "max-sm:dark:bg-black max-sm:bg-white"
+          : scrollColor
+          ? "dark:bg-black/80 bg-white/80"
           : "dark:bg-black/10"
       }`}
     >
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 relative"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -66,7 +100,7 @@ export default function Example() {
               <button
                 type="button"
                 className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 dark:text-gray-300 text-black"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleMenuClose}
               >
                 <MdClear className="h-6 w-6" />
               </button>
@@ -74,17 +108,18 @@ export default function Example() {
               <button
                 type="button"
                 className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 dark:text-gray-300 text-black"
-                onClick={() => setMobileMenuOpen(true)}
+                onClick={handleMenuOpen}
               >
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </button>
             )}
           </div>
           <div
-            className={`flex gap-7 max-sm:flex-col max-sm:absolute max-sm:w-full max-sm:left-0 max-sm:top-0 transition delay-200 justify-center items-center max-sm:px-6 max-sm:py-8 max-sm:dark:bg-black max-sm:bg-white ${
+            id="nav-items"
+            className={`flex gap-7 max-sm:flex-col max-sm:absolute max-sm:w-full max-sm:left-0 max-sm:top-0 transition delay-200 justify-center items-center max-sm:px-6 max-sm:py-8 max-sm:dark:bg-black max-sm:bg-white max-sm:-z-10 ${
               mobileMenuOpen
                 ? "max-sm:visible animate-drop-t shadow"
-                : "max-sm:hidden animate-drop-t-back"
+                : "max-sm:hidden animate-none"
             }`}
           >
             <div className="flex flex-row gap-4 text-black dark:text-slate-300 max-sm:flex-col">
