@@ -9,7 +9,6 @@ import "../assets/css/Hero.css";
 import bgImg from "../assets/docs@tinypng.d9e4dcdc.png";
 import bgGlow from "../assets/docs-dark@tinypng.1bbe175e.png";
 import resumeLink from "../assets/data/resumeLink.json";
-import Atropos from "atropos/react";
 
 export default function Hero() {
   return (
@@ -85,18 +84,12 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="glow-purple rounded-full overflow-hidden bg-transparent">
-            <Atropos
-              activeOffset={10}
-              shadow={false}
-              className="aspect-square bg-transparent"
-            >
-              <img
-                src={profileImg2}
-                alt=""
-                className="h-64 rounded-full aspect-square border-2 border-purple-500 max-md:mb-10 max-sm:h-48"
-              />
-            </Atropos>
+          <div>
+            <img
+              src={profileImg2}
+              alt=""
+              className="h-64 rounded-full aspect-square border-2 border-purple-500 glow-purple max-md:mb-10 max-sm:h-48"
+            />
           </div>
         </div>
       </div>

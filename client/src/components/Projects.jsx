@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import data from "../assets/data/projects.json";
-import Atropos from "atropos/react";
 
 export default function Projects() {
   const [repos, setRepos] = useState([]);
@@ -21,25 +20,19 @@ export default function Projects() {
           <div className="flex justify-center gap-8 flex-wrap">
             {repos.map((repo, index) => {
               return (
-                <Atropos
+                <ProjectCard
                   key={index}
-                  activeOffset={10}
-                  shadow={false}
-                  className="h-auto"
-                >
-                  <ProjectCard
-                    id={index}
-                    reponame={repo.reponame}
-                    preview={repo.preview}
-                    description={repo.description}
-                    createdAt={repo.createdAt}
-                    updatedAt={repo.updatedAt}
-                    homepage={repo.homepage}
-                    htmlLink={repo.htmlLink}
-                    tags={repo.tags}
-                    collaboration={repo.collaboration}
-                  />
-                </Atropos>
+                  id={index}
+                  reponame={repo.reponame}
+                  preview={repo.preview}
+                  description={repo.description}
+                  createdAt={repo.createdAt}
+                  updatedAt={repo.updatedAt}
+                  homepage={repo.homepage}
+                  htmlLink={repo.htmlLink}
+                  tags={repo.tags}
+                  collaboration={repo.collaboration}
+                />
               );
             })}
           </div>

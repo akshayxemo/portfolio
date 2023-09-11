@@ -33,7 +33,7 @@ export default function ProjectCard({
     <>
       <div
         id={id}
-        className="max-w-lg border-[0.5px] dark:border-gray-600/40 dark:bg-transparent bg-white border-gray-600/25 rounded-lg flex flex-col dark:text-white overflow-hidden grow h-full"
+        className="max-w-lg border-[0.5px] dark:border-gray-600/40 dark:bg-transparent bg-white border-gray-600/25 rounded-lg flex flex-col dark:text-white overflow-hidden grow"
       >
         <div className="bg-cover overflow-hidden aspect-video bg-black relative">
           <img
