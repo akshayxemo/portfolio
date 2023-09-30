@@ -8,8 +8,13 @@ import {
 } from "react-icons/fa6";
 import contactData from "../assets/data/contacs.json";
 import { useRef, useState } from "react";
+import PropTypes from "prop-types";
 
-export default function Contact() {
+Contact.propTypes = {
+  socials: PropTypes.object.isRequired,
+};
+
+export default function Contact({ socials }) {
   const LRef = useRef(null);
   const ERef = useRef(null);
   const [emailCopied, setEmailCopied] = useState(false);
@@ -118,37 +123,53 @@ export default function Contact() {
               {/* ........................ Socials ......................... */}
 
               <div className="socials flex flex-row mt-6 gap-3 pt-6 border-t border-gray-600/40">
-                <a
-                  href="https://www.linkedin.com/in/akshay-kumar-das-945405240"
-                  target="blank"
-                  className="p-3 aspect-square rounded-full cursor-pointer bg-slate-800/60 text-white hover:bg-blue-800 transition hover:ease-in delay-100"
-                >
-                  <FaLinkedinIn />
-                </a>
+                {socials.linkedin !== "" ? (
+                  <a
+                    href={socials.linkedin}
+                    target="blank"
+                    className="p-3 aspect-square rounded-full cursor-pointer bg-slate-800/60 text-white hover:bg-blue-800 transition hover:ease-in delay-100"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                ) : (
+                  ""
+                )}
 
-                <a
-                  href="https://twitter.com/yahska_ad"
-                  target="blank"
-                  className="p-3 aspect-square rounded-full cursor-pointer bg-slate-800/60 text-white hover:bg-sky-500 transition hover:ease-in delay-100"
-                >
-                  <FaTwitter />
-                </a>
+                {socials.twitter !== "" ? (
+                  <a
+                    href={socials.twitter}
+                    target="blank"
+                    className="p-3 aspect-square rounded-full cursor-pointer bg-slate-800/60 text-white hover:bg-sky-500 transition hover:ease-in delay-100"
+                  >
+                    <FaTwitter />
+                  </a>
+                ) : (
+                  ""
+                )}
 
-                <a
-                  href="https://www.instagram.com/_yahska_ad_"
-                  target="blank"
-                  className="p-3 aspect-square rounded-full cursor-pointer bg-slate-800/60 text-white hover:bg-rose-600 transition hover:ease-in delay-100"
-                >
-                  <FaInstagram />
-                </a>
+                {socials.instagram !== "" ? (
+                  <a
+                    href={socials.instagram}
+                    target="blank"
+                    className="p-3 aspect-square rounded-full cursor-pointer bg-slate-800/60 text-white hover:bg-rose-600 transition hover:ease-in delay-100"
+                  >
+                    <FaInstagram />
+                  </a>
+                ) : (
+                  ""
+                )}
 
-                <a
-                  href="https://github.com/akshayxemo"
-                  target="blank"
-                  className="p-3 aspect-square rounded-full cursor-pointer bg-slate-800/60 text-white hover:bg-slate-600 transition hover:ease-in delay-100"
-                >
-                  <FaGithub />
-                </a>
+                {socials.github !== "" ? (
+                  <a
+                    href={socials.github}
+                    target="blank"
+                    className="p-3 aspect-square rounded-full cursor-pointer bg-slate-800/60 text-white hover:bg-slate-600 transition hover:ease-in delay-100"
+                  >
+                    <FaGithub />
+                  </a>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
           </div>

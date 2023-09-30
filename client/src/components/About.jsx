@@ -55,7 +55,7 @@ export default function About() {
             Experience
           </div>
         </div>
-        <div className="w-[60%] h-[30rem] overflow-y-auto max-sm:w-full px-6 py-4 dark:text-white text-black">
+        <div className="w-[60%] max-h-[30rem] overflow-y-auto max-sm:w-full px-6 py-4 dark:text-white text-black">
           {active === "about" ? (
             <div className="text-center flex flex-col gap-2 items-center px-8 max-xxsm:px-2">
               <BiSolidQuoteLeft className="text-8xl max-sm:text-5xl dark:opacity-20 opacity-10" />

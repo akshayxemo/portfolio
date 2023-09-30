@@ -70,19 +70,19 @@ export default function Experience({
               {internship && (
                 <Tag
                   text="Internship"
-                  style="bg-orange-500/40 dark:text-orange-400 text-orange-700"
+                  style="bg-orange-500/40 dark:text-orange-400 text-orange-700 text-sm"
                 />
               )}
               {remote && (
                 <Tag
                   text="Remote"
-                  style="bg-sky-500/40 dark:text-sky-400 text-sky-700"
+                  style="bg-sky-500/40 dark:text-sky-400 text-sky-700 text-sm"
                 />
               )}
               {onsite && (
                 <Tag
                   text="Onsite"
-                  style="bg-indigo-500/40 dark:text-indigo-400 text-indigo-700"
+                  style="bg-indigo-500/40 dark:text-indigo-400 text-indigo-700 text-sm"
                 />
               )}
               <span className="dark:text-gray-600 text-gray-500">

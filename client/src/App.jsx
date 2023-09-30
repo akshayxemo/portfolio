@@ -6,18 +6,19 @@ import BackToTop from "./components/BackToTop";
 import Skill from "./components/Skill";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import socials from "../src/assets/data/socials.json";
 
 function App() {
   return (
     <>
       <div className="w-full min-h-screen dark:bg-black font-body">
         <Navbar />
-        <Hero />
+        <Hero socials={socials} />
         <About />
         <BackToTop />
         <Skill />
         <Projects />
-        <Contact />
+        <Contact socials={socials} />
       </div>
     </>
   );
