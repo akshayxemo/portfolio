@@ -1,5 +1,6 @@
 * {
   scroll-behavior: smooth;
+  scroll-padding-top: 88.5px;
 }
 /* width */
 ::-webkit-scrollbar {
