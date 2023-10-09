@@ -10,7 +10,7 @@ import bgImg from "../assets/docs@tinypng.d9e4dcdc.png";
 import bgGlow from "../assets/docs-dark@tinypng.1bbe175e.png";
 import resumeLink from "../assets/data/resumeLink.json";
 import PropTypes from "prop-types";
-import { Slide, Fade, JackInTheBox, Zoom } from "react-awesome-reveal";
+import { Slide, Fade, Zoom } from "react-awesome-reveal";
 
 Hero.propTypes = {
   socials: PropTypes.object.isRequired,
@@ -49,12 +49,12 @@ export default function Hero({ socials }) {
                   </h1>
                 </Slide>
               </Fade>
-              <JackInTheBox delay={200}>
+              <Fade delay={200}>
                 <p className="text-slate-500 mt-3">
                   Pursuing {"MCA' 24"} &nbsp;|&nbsp; Web Developer &nbsp;|&nbsp;
                   Graphics Designer
                 </p>
-              </JackInTheBox>
+              </Fade>
               <Fade delay={300}>
                 <div className="socials flex flex-row mt-5 gap-3 max-sm:justify-center">
                   {socials.linkedin !== "" ? (
