@@ -12,9 +12,9 @@ import Router from "./router/router";
 import { inject } from "@vercel/analytics";
 import { injectSpeedInsights } from "@vercel/speed-insights";
 
+inject();
+injectSpeedInsights();
 function App() {
-  inject();
-  injectSpeedInsights();
   return (
     <>
       <React.StrictMode>
