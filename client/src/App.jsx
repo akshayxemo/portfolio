@@ -9,8 +9,12 @@ import "./App.css";
 // import socials from "../src/assets/data/socials.json";
 import React from "react";
 import Router from "./router/router";
+import { inject } from "@vercel/analytics";
+import { injectSpeedInsights } from "@vercel/speed-insights";
 
 function App() {
+  inject();
+  injectSpeedInsights();
   return (
     <>
       <React.StrictMode>
