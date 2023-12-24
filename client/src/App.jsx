@@ -10,6 +10,7 @@ import "./App.css";
 import React from "react";
 import Router from "./router/router";
 import { inject } from "@vercel/analytics";
+import { SpeedInsights } from "@vercel/speed-insights";
 
 function App() {
   inject();
@@ -17,6 +18,7 @@ function App() {
     <>
       <React.StrictMode>
         <Router />
+        <SpeedInsights />
       </React.StrictMode>
       {/* <div className="w-full min-h-screen dark:bg-black font-body">
         <Navbar />
