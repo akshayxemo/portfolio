@@ -9,16 +9,13 @@ import "./App.css";
 // import socials from "../src/assets/data/socials.json";
 import React from "react";
 import Router from "./router/router";
-import { inject } from "@vercel/analytics";
-import { injectSpeedInsights } from "@vercel/speed-insights";
-
-inject();
-injectSpeedInsights();
+import { Analytics } from "@vercel/analytics";
 function App() {
   return (
     <>
       <React.StrictMode>
         <Router />
+        <Analytics />
       </React.StrictMode>
       {/* <div className="w-full min-h-screen dark:bg-black font-body">
         <Navbar />
