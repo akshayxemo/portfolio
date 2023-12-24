@@ -126,6 +126,12 @@ export default function Example() {
             >
               <div className="flex flex-row gap-4 text-black dark:text-slate-300 max-sm:flex-col">
                 <a
+                  href="/demo"
+                  className="dark:hover:text-white hover:text-slate-600 dark:text-gray-700 text-gray-400"
+                >
+                  Demo
+                </a>
+                <a
                   href="#about"
                   className="dark:hover:text-white hover:text-slate-600"
                 >
