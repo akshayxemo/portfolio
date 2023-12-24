@@ -16,9 +16,9 @@ function App() {
   inject();
   return (
     <>
+      <SpeedInsights />
       <React.StrictMode>
         <Router />
-        <SpeedInsights />
       </React.StrictMode>
       {/* <div className="w-full min-h-screen dark:bg-black font-body">
         <Navbar />
