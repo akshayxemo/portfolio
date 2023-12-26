@@ -6,6 +6,7 @@ import Skill from "../../components/Skill";
 import Projects from "../../components/Projects";
 import Contact from "../../components/Contact";
 import socials from "../../assets/data/socials.json";
+import BlogPost from "../../components/BlogPosts";
 function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ function Home() {
         <BackToTop />
         <Skill />
         <Projects />
+        <BlogPost />
         <Contact socials={socials} />
       </div>
     </>

@@ -125,12 +125,12 @@ export default function Example() {
               }`}
             >
               <div className="flex flex-row gap-4 text-black dark:text-slate-300 max-sm:flex-col">
-                <a
+                {/* <a
                   href="/demo"
                   className="dark:hover:text-white hover:text-slate-600 dark:text-gray-700 text-gray-400"
                 >
                   Demo
-                </a>
+                </a> */}
                 <a
                   href="#about"
                   className="dark:hover:text-white hover:text-slate-600"
@@ -142,6 +142,12 @@ export default function Example() {
                   className="dark:hover:text-white hover:text-slate-600"
                 >
                   Projects
+                </a>
+                <a
+                  href="#blogs"
+                  className="dark:hover:text-white hover:text-slate-600"
+                >
+                  Blogs
                 </a>
                 <a
                   href="#contacts"
