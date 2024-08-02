@@ -99,20 +99,24 @@ export default function Experience({
               <p className="mt-4 dark:text-gray-600 text-gray-500">{remarks}</p>
               <br />
 
-              <div className="flex flex-wrap items-center w-full gap-4 mb-5">
-                <a
-                  href={gitRepo}
-                  target="blank"
-                  className="p-3 rounded border-[0.5px] border-gray-600/25 dark:border-none bg-white dark:bg-gray-800/30 dark:hover:bg-gray-700/40 hover:scale-105 flex justify-center items-center gap-3"
-                >
-                  <FaGithub /> Github
-                </a>
-              </div>
+              {gitRepo && (
+                <div className="flex flex-wrap items-center w-full gap-4 mb-5">
+                  <a
+                    href={gitRepo}
+                    target="blank"
+                    className="p-3 rounded border-[0.5px] border-gray-600/25 dark:border-none bg-white dark:bg-gray-800/30 dark:hover:bg-gray-700/40 hover:scale-105 flex justify-center items-center gap-3"
+                  >
+                    <FaGithub /> Github
+                  </a>
+                </div>
+              )}
 
               <span className="dark:text-gray-600 text-gray-500">
                 <em>
                   {format(parseISO(fromDate), "MMMM d, yyyy")} -{" "}
-                  {format(parseISO(toDate), "MMMM d, yyyy")}
+                  {toDate
+                    ? format(parseISO(toDate), "MMMM d, yyyy")
+                    : "Present"}
                 </em>
               </span>
             </div>

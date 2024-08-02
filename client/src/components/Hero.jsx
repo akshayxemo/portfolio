@@ -51,8 +51,8 @@ export default function Hero({ socials }) {
               </Fade>
               <Fade delay={200}>
                 <p className="text-slate-500 mt-3">
-                  Pursuing {"MCA' 24"} &nbsp;|&nbsp; Web Developer &nbsp;|&nbsp;
-                  Graphics Designer
+                  {"MCA' 24"} &nbsp;|&nbsp; Web Developer &nbsp;|&nbsp; Android
+                  Developer &nbsp;|&nbsp; Graphics Designer
                 </p>
               </Fade>
               <Fade delay={300}>

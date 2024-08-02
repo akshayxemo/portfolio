@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "title": "MCA",
+    "title": "MCA - Master of Computer Application",
     "from": "University Of Calcutta",
     "year": "2022-2024",
-    "marks": "SGPA: 8.49",
-    "status": "Pursuing"
+    "marks": "CGPA: 8.68",
+    "status": "Graduated"
   },
   {
     "id": 2,

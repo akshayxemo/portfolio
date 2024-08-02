@@ -1,5 +1,31 @@
 [
   {
+    "id": "3",
+    "title": "Software Developer Engineer at",
+    "company": "Wellness Connection",
+    "link": "https://wellnessconnection.care/",
+    "fromDate": "2024-08-01",
+    "toDate": "",
+    "remarks": "Developed and implemented mobile application pages using Flutter. Introducing and improving various features for both the website and mobile app. Working both Frontend, Backend and Flutter based applications. Maintaining previous and latest features and resolving issues.",
+    "gitRepo": "",
+    "internship": true,
+    "remote": false,
+    "onsite": true
+  },
+  {
+    "id": "3",
+    "title": "SDE-intern at",
+    "company": "Wellness Connection",
+    "link": "https://wellnessconnection.care/",
+    "fromDate": "2024-04-01",
+    "toDate": "2024-08-01",
+    "remarks": "Optimized performance of the existing codebase to enhance efficiency. Enhanced website aesthetics and user experience based on provided UI designs.Developed and implemented mobile application pages using Flutter. Added and improved various features for both the website and mobile app. Created and tested GraphQL APIs for seamless data integration.",
+    "gitRepo": "",
+    "internship": true,
+    "remote": false,
+    "onsite": true
+  },
+  {
     "id": "2",
     "title": "Web Development and Design at",
     "company": "Oasis-Infobyte",

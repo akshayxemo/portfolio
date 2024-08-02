@@ -7,6 +7,7 @@ import {
   SiNodedotjs,
   SiReact,
   SiTailwindcss,
+  SiFlutter,
 } from "react-icons/si";
 import { Fade, Slide } from "react-awesome-reveal";
 
@@ -86,6 +87,13 @@ export default function Skill() {
               <Fade delay={900}>
                 <div className="p-4 rounded-full aspect-square flex justify-center items-center dark:bg-slate-600/30 bg-white drop-shadow-xl">
                   <SiMongodb className="text-green-500 hover:scale-105" />
+                </div>
+              </Fade>
+            </Slide>
+            <Slide direction={"up"} delay={800}>
+              <Fade delay={900}>
+                <div className="p-4 rounded-full aspect-square flex justify-center items-center dark:bg-slate-600/30 bg-white drop-shadow-xl">
+                  <SiFlutter className="text-sky-400 hover:scale-105" />
                 </div>
               </Fade>
             </Slide>

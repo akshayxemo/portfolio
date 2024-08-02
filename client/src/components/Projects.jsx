@@ -5,10 +5,11 @@ import data from "../assets/data/projects.json";
 export default function Projects() {
   const [repos, setRepos] = useState([]);
   useEffect(() => {
-    setRepos(data);
+    const reversedData = [...data].reverse();
+    setRepos(reversedData);
   }, []);
 
-  console.log(repos);
+  // console.log(repos);
   return (
     <>
       <div
@@ -21,23 +22,24 @@ export default function Projects() {
             <p className="text-gray-500">Projects that showcase my skills</p>
           </div>
           <div className="flex justify-center gap-8 flex-wrap">
-            {repos.map((repo, index) => {
-              return (
-                <ProjectCard
-                  key={index + 1}
-                  id={index + 1}
-                  reponame={repo.reponame}
-                  preview={repo.preview}
-                  description={repo.description}
-                  createdAt={repo.createdAt}
-                  updatedAt={repo.updatedAt}
-                  homepage={repo.homepage}
-                  htmlLink={repo.htmlLink}
-                  tags={repo.tags}
-                  collaboration={repo.collaboration}
-                />
-              );
-            })}
+            {repos.length &&
+              repos.map((repo, index) => {
+                return (
+                  <ProjectCard
+                    key={index + 1}
+                    id={index + 1}
+                    reponame={repo.reponame}
+                    preview={repo.preview}
+                    description={repo.description}
+                    createdAt={repo.createdAt}
+                    updatedAt={repo.updatedAt}
+                    homepage={repo.homepage}
+                    htmlLink={repo.htmlLink}
+                    tags={repo.tags}
+                    collaboration={repo.collaboration}
+                  />
+                );
+              })}
           </div>
         </div>
       </div>
