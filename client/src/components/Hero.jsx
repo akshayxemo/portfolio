@@ -46,8 +46,9 @@ export default function Hero() {
 							</Fade>
 							<Fade delay={200}>
 								<p className="text-slate-500 mt-3">
-									{"MCA' 24"} &nbsp;|&nbsp; Web Developer &nbsp;|&nbsp; Android
-									Developer &nbsp;|&nbsp; Graphics Designer
+									{"MCA' 24"} &nbsp;|&nbsp; Fullstack Web Developer
+									&nbsp;|&nbsp; Android Developer &nbsp;|&nbsp; Graphics
+									Designer
 								</p>
 							</Fade>
 
