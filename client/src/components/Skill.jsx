@@ -1,6 +1,7 @@
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import { skillsObj } from "../assets/data/skills";
 import { useEffect, useState } from "react";
+import SkillsWithAnimatedTooltip from "./ui/SkillsWithAnimatedTooltip";
 
 export default function Skill() {
 	const [skills, setSkills] = useState([]);
@@ -23,9 +24,9 @@ export default function Skill() {
 							</p>
 						</div>
 					</Fade>
-					<div className="flex flex-wrap justify-center items-center gap-6 text-4xl max-sm:text-3xl max-xxsm:text-2xl">
+					<div className="flex flex-wrap justify-center items-center gap-8 text-4xl max-sm:text-3xl max-xxsm:text-2xl">
 						{/* .............. Skills .............. */}
-						{skills.map((key, index) => {
+						{/* {skills.map((key, index) => {
 							return (
 								<Slide direction={"up"} delay={100 + index * 60} key={index}>
 									<Fade delay={200 + index * 60}>
@@ -38,7 +39,8 @@ export default function Skill() {
 									</Fade>
 								</Slide>
 							);
-						})}
+						})} */}
+						<SkillsWithAnimatedTooltip items={skills} />
 					</div>
 				</div>
 			</div>
