@@ -13,8 +13,8 @@ Education.propTypes = {
 export default function Education({ id, title, from, year, marks, status }) {
   return (
     <>
-      <Slide direction={"up"} className="mb-4 last:mb-0">
-        <Fade delay={100}>
+      <Slide direction={"up"} triggerOnce className="mb-4 last:mb-0">
+        <Fade delay={100} triggerOnce>
           <div
             id={id}
             className="dark:text-white text-black p-6 dark:bg-slate-500/10 bg-slate-500/5 rounded-lg"
