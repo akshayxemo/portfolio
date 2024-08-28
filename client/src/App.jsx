@@ -1,17 +1,25 @@
 import "./App.css";
-import React from "react";
+import React, { useEffect } from "react";
 import Router from "./router/router";
 import { inject } from "@vercel/analytics";
+import useDarkSide from "./hooks/useDarkSide";
 
 function App() {
-	inject();
-	return (
-		<>
-			<React.StrictMode>
-				<Router />
-			</React.StrictMode>
-		</>
-	);
+  inject();
+  const [colorTheme, setTheme] = useDarkSide();
+  useEffect(() => {
+    if (colorTheme === "light") {
+      localStorage.setItem("theme", "dark");
+    }
+  }, [colorTheme]);
+
+  return (
+    <>
+      <React.StrictMode>
+        <Router />
+      </React.StrictMode>
+    </>
+  );
 }
 
 export default App;
