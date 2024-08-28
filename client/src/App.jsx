@@ -13,6 +13,10 @@ function App() {
     }
   }, [colorTheme]);
 
+  useEffect(() => {
+    localStorage.setItem("theme", "dark");
+  }, []);
+
   return (
     <>
       <React.StrictMode>
